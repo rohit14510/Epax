@@ -1,0 +1,377 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --theme-color: #FFFF00;
+    --main-topic:#6699FF;
+    --main-Para:#828289;
+    --main-Heading:#2A2A2A;
+    
+}
+.top_space{
+    margin-top: 5rem !important;
+}
+.nav_section{
+    display: flex;
+    justify-content: end;
+}
+.nav_list a{
+    color: var(--main-topic);
+    font-size: 1.1rem;
+    margin-left: 1.5rem;
+    transition: all 0.5s ease;
+}
+.nav_list a:hover{
+    color: var(--theme-color);
+
+}
+.header_button{
+    padding: .3rem .8rem;
+    background-color: var(--theme-color);
+    font-size: 1rem;
+    color: var(--main-topic);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+}
+/* .header_button:hover{
+    background-color: white;
+    color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+} */
+.header_button h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.header_button p{
+    font-size: .8rem;
+}
+.menu-toggle{
+    font-size: 2rem;
+    display: none;
+}
+.call_icon{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-color);
+    color: white;
+    border-radius: 50%;
+   display: none;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle{
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .left_secton_header{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+      
+    }
+    .logo{
+        width: 50%;
+    }
+    .number_section{
+        display: none;
+    }
+    .nav_section{
+        display: none;
+    }
+    .call_icon{
+        display: inline-flex;
+    }
+    .nav_list{
+        display: block !important;
+        text-align:start;
+    }
+    .nav_list li a {
+        color: var(--theme-color);
+        font-weight: 700;
+        margin-bottom: 5px !important;
+    
+      } 
+     
+      .nav-link{
+        margin: 0% !important;
+      }
+
+    /* .nav_section {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      }
+    
+      .nav_section.active {
+        display: block; 
+      }
+    
+      .nav_list {
+        display: block ;
+        text-align:start; 
+      }
+    
+      .nav_list li a {
+        color: var(--theme-color);
+        font-weight: 700;
+        margin-bottom: 10px;
+      } */
+  }
+
+.about_img{
+    border-radius: 20px;
+}
+  .icon_container{
+    background-color:#2A2A2A;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.icon_container svg {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.icon_container:hover {
+    background-color:var(--theme-color);
+    transform: translateY(-10px); /* Adjust the value as needed */
+}
+.icon_container:hover svg{
+    color: var(--main-Heading);
+}
+  .about_section p{
+    color: var(--main-Para);
+  }
+  .about_section h1{
+    color: var(--main-Heading);
+    
+  }
+  .exprince_left {
+    position: relative;
+    background-image: url('assets/experince.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color */
+    padding: 4rem;
+   
+}
+
+.exprince_left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Overlay color and opacity */
+    z-index: 1;
+}
+
+.exprince_left > * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+.exprince_right{
+    width:100%;
+    height: 100%;
+    background-size: contain;
+}
+.service_section p{
+    color: var(--main-Para);
+    transition: .5s;
+}
+.service_card_1{
+    background-color:var(--main-Heading);
+    border-radius: 20px;
+    color:white;
+    width: 100%;
+    transition: .5s;
+
+}
+.service_card_1 p{
+    color: white;
+}
+.service_card_1:hover p{
+    color: var(--main-Para);
+}
+.service_card_1:hover{
+    background-color:white;   
+    color: var(--main-Heading);
+   
+}
+.service_card:hover p{
+    color:white;
+}
+.service_card_1:hover .service_icon_1 {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--main-Heading);
+    border-radius: 10px;
+}
+.service_card_1:hover .service_icon_1 svg{
+    color: #FFFF00;
+}
+.service_card{
+    background-color:white;
+    border-radius: 20px;
+    color: var(--main-Heading);
+    width: 100%;
+    transition: .5s;
+
+}
+.service_icon_1{
+    display:inline-block;
+    padding: 1rem;
+    background-color:var(--theme-color);
+    border-radius: 10px;
+   
+
+}
+.service_icon{
+    display:inline-block;
+    padding: 1rem;
+    background-color:var(--main-Heading);
+    border-radius: 10px;
+   
+
+}
+.service_card:hover{
+    background-color:var(--main-Heading);
+    color:white;
+}
+.service_card:hover .service_icon {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--theme-color);
+    border-radius: 10px;
+}
+.service_card:hover .service_icon svg{
+    color: black;
+}
+.download_section{
+    background-image: url('assets/downloadapp.jpg');
+   height: 80vh;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.app_download_btn {
+    width: 10rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* Adjust as needed */
+    border: none; /* Adjust as needed */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.app_download_btn img {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.app_download_btn:hover {
+    transform: translateY(-10px); /* Adjust the value as needed */
+}
+.contact_section p{
+    color: var(--main-Para);
+}
+.contact_icon{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--theme-color);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.contact_icon svg {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.contact_icon:hover {
+    background-color:var(--main-Heading);
+    transform: translateY(-10px); /* Adjust the value as needed */
+}
+.contact_icon:hover svg{
+    color: var(--theme-color);
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.feature p{
+    color: var(--main-Para);
+}
+.feature_icon i{
+color: var(--main-topic);
+font-size: 1rem;
+margin-right: .5rem;
+}
+.hour_service{
+    background-color: var(--theme-color);
+    padding: 6rem;
+}
+.hour_service_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A2A2A;
+    padding: .7rem;
+    border-radius: 10px;
+}
+.hour_service_icon i{
+    color: var(--theme-color);
+    font-size: 1.5rem;
+}
+.footer {
+    position: relative;
+    background-image: url('assets/footer_img.jpg');
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    width: 100%; /* Adjust as needed */
+    height: 400px; /* Define a height to ensure the overlay covers the footer; adjust as needed */
+    color: white; /* Optional: Ensures text color contrasts with the background image */
+}
+
+.footer_overlay {
+    position: absolute; /* Position overlay absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    z-index: 1; /* Ensure overlay appears above other content */
+}
+
+.content {
+    position: relative; /* Ensure content is positioned relative to the container */
+    z-index: 2; /* Ensure content appears above the overlay */
+    color: white; /* Example text color to contrast with the overlay */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in the total width and height */
+}
+.privacy_policy a{
+text-decoration: none;
+color: white;
+}
+.footer_email_btn{
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 10px;
+    margin-left: 1rem;
+    padding: .5rem;
+}
